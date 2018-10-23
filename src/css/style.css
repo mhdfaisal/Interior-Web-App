@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+* {
+  box-sizing: border-box; }
+
+/*------- Fonts ----*/
+/*------ Reusable variables ----*/
+/*-------- Reusable Classes ----------*/
+.dark-background {
+  background: rgba(56, 17, 73, 0.7); }
+
+.light-background {
+  background: rgba(56, 17, 73, 0.4); }
+
+.primary-border {
+  border: 2px solid #FFD700; }
+
+.btn-primary:hover {
+  background: #fcba04; }
+
+.secondary-border {
+  border: 2px solid #381149; }
+
+.btn-secondary:hover {
+  background: #381149;
+  color: #fff;
+  border: 2px solid #FFD700; }
+
+/*---------- Styling the header ------------*/
+#main-header {
+  /*--------- Sub header  -----------*/
+  /*-------- Navigation bar ---------*/ }
+  #main-header #sub-header a {
+    text-decoration: none;
+    color: #000; }
+  #main-header nav {
+    background-color: #381149 !important; }
+  #main-header .nav-link {
+    color: #FFD700 !important; }
+  #main-header .nav-link:hover {
+    border-left: 2px solid #FFD700;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s; }
+
+/*----------- Showcase Section --*/
+#showcase {
+  /*------ Carousel caption ------*/ }
+  #showcase .carousel-item {
+    height: 83vh; }
+  #showcase .carousel-image-3 {
+    background: url("../img/hero3.jpeg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat; }
+  #showcase .carousel-image-4 {
+    background-image: url("../img/hero4.jpeg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat; }
+  #showcase .carousel-image-5 {
+    background-image: url("../img/hero6.jpeg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat; }
+  #showcase .carousel-capt {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    /*------- First Slide heading ------*/
+    /*----- Second slide heading -----*/ }
+    #showcase .carousel-capt .first-title {
+      display: block;
+      padding: 15px;
+      color: #381149;
+      font-family: 'Pacifico', cursive; }
+    #showcase .carousel-capt .second-title, #showcase .carousel-capt .third-title {
+      display: block;
+      padding: 15px;
+      color: #fff;
+      font-family: 'Pacifico', cursive; }
+    #showcase .carousel-capt .third-title, #showcase .carousel-capt .first-title {
+      color: #ffe448; }
+
+/*--------- About Section ---------*/
+#about {
+  background: url("../img/about.jpg");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat; }
+
+/*------ Portfolio section ------*/
+#portfolio-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hero5.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #portfolio-header h1 {
+    font-family: 'Pacifico', cursive; }
+  #portfolio-header h3 {
+    letter-spacing: 5px; }

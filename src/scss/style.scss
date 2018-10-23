@@ -1,0 +1,149 @@
+*{
+    box-sizing:border-box;
+}
+/*------- Fonts ----*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/*------ Reusable variables ----*/
+$primary-color:rgb(56, 17, 73);
+$font-color:#FFD700;
+
+/*-------- Reusable Classes ----------*/
+.dark-background{
+    background: rgba(56, 17, 73,0.7);
+}
+
+.light-background{
+    background: rgba(56, 17, 73, 0.4);
+}
+
+.primary-border{
+    border:2px solid $font-color;
+}
+
+.btn-primary:hover{
+
+    background:rgb(252, 186, 4);
+}
+
+.secondary-border{
+    border: 2px solid rgb(56, 17, 73);
+}
+.btn-secondary:hover{
+    background: rgb(56, 17, 73);
+    color:#fff;
+    border:2px solid $font-color;
+}
+
+/*---------- Styling the header ------------*/
+#main-header{
+
+    /*--------- Sub header  -----------*/
+    #sub-header{
+        a{
+            text-decoration:none;
+            color:#000;
+        }
+    }
+
+    /*-------- Navigation bar ---------*/
+    nav{
+        background-color: $primary-color !important;
+    }
+    .nav-link{
+        color: $font-color !important;
+    }
+
+    .nav-link:hover{
+        border-left:2px solid $font-color;
+        transition: all 0.4s    ;
+        -webkit-transition: all 0.4s    ;
+        -moz-transition: all 0.4s    ;
+        -ms-transition: all 0.4s    ;
+        -o-transition: all 0.4s    ;
+}
+}
+/*----------- Showcase Section --*/
+#showcase{
+   .carousel-item{
+       height:83vh;
+   }
+
+   .carousel-image-3{
+    background: url('../img/hero3.jpeg');
+    background-size:cover;
+    background-position:top left;
+    background-repeat: no-repeat;
+    }
+    .carousel-image-4{
+        background-image:url('../img/hero4.jpeg');
+        background-size:cover;
+        background-position:top left;
+        background-repeat: no-repeat;
+    }
+    .carousel-image-5{
+        background-image: url('../img/hero6.jpeg');
+        background-size:cover;
+        background-position:top left;
+        background-repeat: no-repeat;
+    }
+
+    /*------ Carousel caption ------*/
+    .carousel-capt{
+        position: absolute;
+        width: 80%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%)    ;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+       
+        /*------- First Slide heading ------*/
+        .first-title{
+            display: block;
+            padding:15px;
+            color:$primary-color;
+            font-family: 'Pacifico', cursive;
+        }
+
+
+        /*----- Second slide heading -----*/
+        .second-title,.third-title{
+            
+            display: block;
+            padding:15px;
+            color:#fff;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .third-title, .first-title{
+            color:rgb(255, 228, 72);
+        }
+}
+}
+
+/*--------- About Section ---------*/
+#about{
+    background: url('../img/about.jpg');
+    background-size:cover;
+    background-position:top left;
+    background-repeat: no-repeat;
+
+}
+
+/*------ Portfolio section ------*/
+    #portfolio-header{
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../img/hero5.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    h1{
+        font-family: 'Pacifico', cursive;
+    }
+    h3{
+        letter-spacing: 5px;
+    }
+    }
