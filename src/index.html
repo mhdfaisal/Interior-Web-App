@@ -8,6 +8,10 @@
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Slick Slider CSS-->
+    <link href="css/slick.css" type="text/css" rel="stylesheet">
+    <link href="css/slick-theme.css" type="text/css" rel="stylesheet">
+    <!-- Custom Stylesheet-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -33,17 +37,18 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container">
-                <a href="index.html" class="navbar-brand">Company Logo</a>
+                <a href="index.html" class="navbar-brand">
+                    <h2 class="d-inline-block align-middle" style="font-family:Pacifio, cursive">Home Hardware</h2>
+                </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nb1">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> 
                 <div class="collapse navbar-collapse" id="nb1">
                    <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item ml-3"><a href="#" class="nav-link active">About</a></li>
-                    <li class="nav-item ml-3"><a href="#" class="nav-link">Services</a></li>
-                    <li class="nav-item ml-3"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item ml-3"><a href="#" class="nav-link">Process</a></li>
-                    <li class="nav-item ml-3"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item ml-3"><a href="#about" class="nav-link active">About</a></li>
+                    <li class="nav-item ml-3"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item ml-3"><a href="#portfolio-body" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item ml-3"><a href="#contact" class="nav-link">Contact</a></li>
                    </ul>
                 </div>
             </div>
@@ -64,6 +69,7 @@
                     <div class="carousel-item active carousel-image-3">
                         <div class="container text-center">
                             <div class="carousel-capt dark-background p-0 primary-border">
+                                <img src="img/logo3.png" class="img-fluid">
                                 <h1 class="display-4 third-title animated fadeInRight slow">
                                     Work never looked so good.
                                 </h1>
@@ -77,6 +83,7 @@
                     <div class="carousel-item carousel-image-4">
                         <div class="container text-center">
                             <div class="carousel-capt dark-background p-0">
+                                    <img src="img/logo3.png" class="img-fluid">
                                 <h1 class="display-4 second-title animated bounceInUp">
                                     "Design is thinking...<br>made Visual."</br>
                                 </h1>
@@ -92,6 +99,7 @@
                     <div class="carousel-item carousel-image-5"> 
                             <div class="container">
                                 <div class="carousel-capt p-5 text-left light-background primary-border">
+                                        <img src="img/logo3.png" class="img-fluid">
                                     <h1 class="display-4 third-title animated rotateInUpLeft">
                                         Enjoy the luxury...
                                     </h1>
@@ -114,20 +122,153 @@
 
     <!--About section -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <img src="img/logo3.png" class="img-fluid logo-img animated" id="about-image">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="img/logo.png">
-                   <h2 class="my-5 text-uppercase">Who We Are</h2>
-                   <p>We are a team of professional painters and decorators based in London and<br>we’ve been providing high quality painting and decorating services<br>to residential and commercial customers for many years.</p>
+                   <h2 class="my-4 text-uppercase display-4">Who We Are</h2>
+                   <p class="lead mb-4">We are a team of professional painters and decorators based in London and<br>we’ve been providing high quality painting and decorating services<br>to residential and commercial customers for many years.</p>
                    <button class="btn btn-primary btn-lg primary-border text-white text-uppercase">Get in Touch!</button>
                 </div>
             </div>
         </div>
     </section>
 
+
+     <!-- Services Section -->
+     <section id="services" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"><h1 class="display-4 text-center animated" id="services-header">Our Services</h1></div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-md-3 mb-4 text-center">
+                        <div class="card">
+                            <img src="img/hero6.jpeg" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <div class="card-title"><h5>Residential Painting &amp; Decorating</h5></div>
+                                <p class=" mt-3">Residential painting and decorating services for flats, apartments, bungalows and houses.</p>
+                               <button class="btn btn-primary">Read More ...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="img/hero2.jpeg" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <div class="card-title text-center"><h5>Commercial Painting &amp; Decorating</h5></div>
+                                <p class="mt-3">Commercial painting and decorating services for offices, retail shops, hotels, schools and restaurants.</p>
+                                <button class="btn btn-primary">Read More ...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="img/hero6.jpeg" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <div class="card-title"><h5>School Painting &amp; Decorating</h5></div>
+                                <p class="mt-3">School holidays painting and decorating services for nurseries, schools, colleges and universities.</p>
+                                <button class="btn btn-primary">Read More ...</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/hero4.jpeg" class="img-fluid card-img-top">
+                            <div class="card-body text-center">
+                                <div class="card-title"><h5>Exterior Painting &amp; Decorating</h5></div>
+                                <p class="mt-3">Exterior painting and decorating services for residential and commercial properties.
+                                </p>
+                                <button class="btn btn-primary">Read More ...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services details-->
+        <section class="py-5 text-light mb-5" id="services-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                           <div class="card-body py-4">
+                               <i class="fa fa-check-square-o"></i>
+                               <div class="d-inline-block align-top ml-2">
+                                <h5>Interior &amp; Exterior</h5>
+                                <p>Painting & Decorating Services</p>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                           <div class="card-body py-4">
+                               <i class="fa fa-check-square-o"></i>
+                               <div class="d-inline-block align-top ml-2">
+                                <h5>Residential/Commercial</h5>
+                                <p>Decorating for home and office</p>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                           <div class="card-body py-4">
+                               <i class="fa fa-check-square-o"></i>
+                               <div class="d-inline-block align-top ml-2">
+                                <h5>Our Guarantee</h5>
+                                <p>All work guaranteed for 2 years</p>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                            <div class="card-body py-4">
+                                <i class="fa fa-check-square-o"></i>
+                                <div class="d-inline-block align-top ml-2">
+                                    <h5>Quality Control</h5>
+                                    <p>On-site quality control Supervisor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                            <div class="card-body py-4">
+                                <i class="fa fa-check-square-o"></i>
+                                <div class="d-inline-block align-top">
+                                    <h5>Competitive Rates</h5>
+                                    <p>Great prices for quality work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-outline">
+                            <div class="card-body py-4">
+                                <i class="fa fa-check-square-o"></i>
+                                <div class="d-inline-block align-top ml-2">
+                                    <h5>Health & Safety Trained</h5>
+                                    <p>Health & Safety trained staff</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Portfolio Section -->
-        <div id="portfolio-header" class="py-5 text-center text-light py-5">
+        <div id="portfolio-header" class="py-5 text-center text-light">
             <h1 class="display-3 my-5">Spectacular Spaces</h1>
             <h3 class="text-uppercase my-5 font-weight-bold">that capture your attention</h3>
         </div>
@@ -159,20 +300,167 @@
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5 text-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                            <h1 class="display-4 mb-4">Testimonials</h1>
+                            <h5 class="mb-4">What Our Clients Say?</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="slick">
+                            <div class="card mx-2">
+                                <div class="card-body bg-outline">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p><blockquote>“The decorators were friendly, efficient and professional. Thank you for a very good job.”</blockquote>
+                                    </p>
+                                    <p><small>E.M. in Belsize Park</small></p>
+                                </div>
+                            </div> 
+                            <div><div class="card mx-2">
+                                <div class="card-body bg-outline">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p><blockquote>“The decorators were friendly, efficient and professional. Thank you for a very good job.”</blockquote>
+                                    </p>
+                                    <p><small>E.M. in Belsize Park</small></p>
+                                </div>
+                            </div>
+                        </div>
+                            <div>
+                                <div class="card mx-2">
+                                    <div class="card-body bg-outline">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                        <p><blockquote>“The decorators were friendly, efficient and professional. Thank you for a very good job.”</blockquote>
+                                        </p>
+                                        <p><small>E.M. in Belsize Park</small></p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="fixed-bottom text-right">
-        <a href="#">Go to top</a>
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 text-center">
+           <div class="container">
+            <h3 class="mb-4 animated delay-1s" id="contact-heading">Call us for a quote on 020 1234 5678</h3>
+            <h5 class="mb-5">Alternatively you can send us a message below and we will respond within 24 hours.</h5>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name (Required)">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <input type="tel" class="form-control" placeholder="Phone (Required)">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <input type="email" class="form-control" placeholder="Email (Required)">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="How did you hear about us?">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block"><i class="fa fa-paper-plane"></i> Get Quote</button>
+                </div>
+            </form>
+           </div>
+        </section>
+
+        <!-- Summarised footer section -->
+        <section id="sub-footer" class="py-5 bg-primary text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <h3 class="mb-4">Our Office</h3>
+                        <p class="font-weight-bold">Home Hardware</p>
+                        <p>8 Seaforth Avenue
+                                New Malden
+                                South London
+                                KT3 6JP
+                        </p>
+                        <h4>Office hours:</h4>
+                        <p>9am - 5pm, Mon - Fri</p>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                            <h3 class="mb-4">Call Us</h3>
+                            <h5 class="font-weight-bold"><i class="fa fa-phone"></i> 123-456-7890</h5>
+                            <p>We are happy to discuss all your decorating needs!</p>
+                            <p class="social text-light mt-4">
+                                <a href="#" class="text-light"><i class="fa fa-facebook mr-2"></i></a>
+                                <a href="#" class="text-light"><i class="fa fa-twitter mr-2"></i></a>
+                                <a href="#" class="text-light"><i class="fa fa-instagram mr-2"></i></a>
+                                <a href="#" class="text-light"><i class="fa fa-pinterest mr-2"></i></a>
+                            </p>
+                    </div>
+                    <div class="col-md-3 mb-3 d-none d-md-block">
+                            <h3 class="mb-4">What We Do</h3>
+                            <ul>
+                                <li class="mb-2">Residential Decorating</li>
+                                <li class="mb-2">Commercial Decorating</li>
+                                <li class="mb-2">Interior & Exterior</li>
+                                <li class="mb-2">Wallpapering</li>
+                                <li class="mb-2">Coving</li>
+                                <li class="mb-2">Small Repairs</li>
+                            </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-3 d-none d-md-block">
+                            <h3 class="mb-4">Quality Control</h3>
+                            <p>We have a Quality Control Supervisor on every job to ensure complete customer satisfaction.</p>
+                            <p><img src="img/icons/certified.png" alt=""></p>
+                    </div>
+
+                </div>
+            </div>  
+        </section>
+        
+        <!-- footer section-->
+        <footer id="footer" class="py-3">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-md-12">
+                        &copy; 2018 Home Hardware | All rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <!-- Fixed bottom -->
+    <div class="fixed-bottom" id="nav-arrow">
+        <a href="#" class="btn btn-light"><i class="fa fa-arrow-up" id="nav-arrow-icon"></i></a>
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Bootstrap Carousel Init -->
-    <script>
-        $('.carousel').carousel({
-            interval:6000,
-            pause:false
-        });
-    </script>
+    <!-- Slick Slider JS-->
+    <script src="js/slick.min.js"></script>
+    <!-- Waypoint JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

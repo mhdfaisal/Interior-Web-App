@@ -35,6 +35,12 @@ $font-color:#FFD700;
     border:2px solid $font-color;
 }
 
+.logo-img{
+    height: 170px;
+    width: 170px;
+}
+
+
 /*---------- Styling the header ------------*/
 #main-header{
 
@@ -44,11 +50,16 @@ $font-color:#FFD700;
             text-decoration:none;
             color:#000;
         }
+
     }
 
     /*-------- Navigation bar ---------*/
     nav{
         background-color: $primary-color !important;
+    }
+
+    .navbar-brand h2{
+        color:$font-color;
     }
     .nav-link{
         color: $font-color !important;
@@ -62,11 +73,21 @@ $font-color:#FFD700;
         -ms-transition: all 0.4s    ;
         -o-transition: all 0.4s    ;
 }
+
 }
 /*----------- Showcase Section --*/
 #showcase{
    .carousel-item{
        height:83vh;
+   }
+
+   .carousel-item img{
+       height: 100px;
+       width:100px;
+       border-left:2px solid $font-color;
+       border-bottom:2px solid $font-color;
+       border-right:2px solid $font-color;
+
    }
 
    .carousel-image-3{
@@ -126,10 +147,16 @@ $font-color:#FFD700;
 
 /*--------- About Section ---------*/
 #about{
-    background: url('../img/about.jpg');
+    background: url('../img/about1.jpg');
     background-size:cover;
     background-position:top left;
     background-repeat: no-repeat;
+
+    .box{
+        background: rgba(0,0,0,0.6);
+        color:#fff;
+        box-shadow: 0px 8px 16px #333;
+    }
 
 }
 
@@ -147,3 +174,95 @@ $font-color:#FFD700;
         letter-spacing: 5px;
     }
     }
+
+/*-------- Services Section -------*/
+#services{
+    background: #fff;
+}
+
+/*------------ Services details section ----------*/
+#services-details{
+    background: $primary-color;
+    .fa{
+        font-size:40px;
+    }
+    .card{
+        border:2px solid #fff;
+        background: $primary-color;
+        border-radius: 10px; 
+        -webkit-border-radius: 10px    ;
+        -moz-border-radius: 10px    ;
+        -ms-border-radius: 10px    ;
+        -o-border-radius: 10px    ;
+}
+}
+
+/*-------- Styling the testimonial section -------*/
+#testimonials{
+    background: $primary-color;
+    .card{
+        border:2px solid #fff;
+        background: $primary-color;
+        border-radius: 10px; 
+        -webkit-border-radius: 10px    ;
+        -moz-border-radius: 10px    ;
+        -ms-border-radius: 10px    ;
+        -o-border-radius: 10px    ;
+        }
+
+    .fa{
+        color:$font-color;
+    }
+
+}
+/*--------- Styling the Sub Footer ---------*/
+#sub-footer{
+    ul{
+        list-style-type:none;
+        list-style-image: url('../img/icons/list-icon.png');
+        list-style-position: initial;
+    }
+    .fa{
+        font-size:32px;
+    }
+   
+}
+/*------- styling the footer ------*/
+#footer{
+    background: rgb(34, 10, 44);
+}
+
+/*---------- Fixed navigaton arrow ----*/
+#nav-arrow{
+    opacity:0.9;
+}
+
+/*---------- Responsive design for small screens ----------------*/
+
+
+
+@media only screen and (max-width:768px){
+ 
+}
+
+@media only screen and (max-width:320px){
+    .navbar-brand{
+        h2{
+            font-size:100%;
+        }
+    }
+    .third-title,.second-title,.first-title{
+        font-size: 180%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .navbar-brand{
+        h2{
+            font-size:100%;
+        }
+    }
+    .third-title,.second-title,.first-title{
+        font-size: 180%;
+    }
+}

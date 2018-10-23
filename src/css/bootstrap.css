@@ -184,7 +184,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #FFD700;
+  color: #343a40;
   text-align: left;
   caption-side: bottom; }
 
@@ -1273,7 +1273,7 @@ pre {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(56, 17, 73, 0.25); }
   .form-control::placeholder {
-    color: #FFD700;
+    color: #adb5bd;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -1369,7 +1369,7 @@ textarea.form-control {
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
   .form-check-input:disabled ~ .form-check-label {
-    color: #FFD700; }
+    color: #343a40; }
 
 .form-check-label {
   margin-bottom: 0; }
@@ -6233,7 +6233,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #212529 !important; }
 
 .text-muted {
-  color: #FFD700 !important; }
+  color: #343a40 !important; }
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important; }

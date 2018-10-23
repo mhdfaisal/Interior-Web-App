@@ -25,6 +25,10 @@
   color: #fff;
   border: 2px solid #FFD700; }
 
+.logo-img {
+  height: 170px;
+  width: 170px; }
+
 /*---------- Styling the header ------------*/
 #main-header {
   /*--------- Sub header  -----------*/
@@ -34,6 +38,8 @@
     color: #000; }
   #main-header nav {
     background-color: #381149 !important; }
+  #main-header .navbar-brand h2 {
+    color: #FFD700; }
   #main-header .nav-link {
     color: #FFD700 !important; }
   #main-header .nav-link:hover {
@@ -49,6 +55,12 @@
   /*------ Carousel caption ------*/ }
   #showcase .carousel-item {
     height: 83vh; }
+  #showcase .carousel-item img {
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid #FFD700;
+    border-bottom: 2px solid #FFD700;
+    border-right: 2px solid #FFD700; }
   #showcase .carousel-image-3 {
     background: url("../img/hero3.jpeg");
     background-size: cover;
@@ -91,10 +103,14 @@
 
 /*--------- About Section ---------*/
 #about {
-  background: url("../img/about.jpg");
+  background: url("../img/about1.jpg");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat; }
+  #about .box {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-shadow: 0px 8px 16px #333; }
 
 /*------ Portfolio section ------*/
 #portfolio-header {
@@ -106,3 +122,65 @@
     font-family: 'Pacifico', cursive; }
   #portfolio-header h3 {
     letter-spacing: 5px; }
+
+/*-------- Services Section -------*/
+#services {
+  background: #fff; }
+
+/*------------ Services details section ----------*/
+#services-details {
+  background: #381149; }
+  #services-details .fa {
+    font-size: 40px; }
+  #services-details .card {
+    border: 2px solid #fff;
+    background: #381149;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+
+/*-------- Styling the testimonial section -------*/
+#testimonials {
+  background: #381149; }
+  #testimonials .card {
+    border: 2px solid #fff;
+    background: #381149;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+  #testimonials .fa {
+    color: #FFD700; }
+
+/*--------- Styling the Sub Footer ---------*/
+#sub-footer ul {
+  list-style-type: none;
+  list-style-image: url("../img/icons/list-icon.png");
+  list-style-position: initial; }
+
+#sub-footer .fa {
+  font-size: 32px; }
+
+/*------- styling the footer ------*/
+#footer {
+  background: #220a2c; }
+
+/*---------- Fixed navigaton arrow ----*/
+#nav-arrow {
+  opacity: 0.9; }
+
+/*---------- Responsive design for small screens ----------------*/
+@media only screen and (max-width: 320px) {
+  .navbar-brand h2 {
+    font-size: 100%; }
+  .third-title, .second-title, .first-title {
+    font-size: 180%; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar-brand h2 {
+    font-size: 100%; }
+  .third-title, .second-title, .first-title {
+    font-size: 180%; } }
