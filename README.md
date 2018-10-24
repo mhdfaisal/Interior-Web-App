@@ -4,4 +4,4 @@ A handcrafted Website template for an iterior decorator website built using HTML
 for learning purposes but need to inform the owner (<a href="http://www.mohdfaisal.com">Mohd Faisal</a>) before using it for commercial purposes.
 
 # For Live Preview Visit The Link Below -
-https://mhdfaisal.github.io/Interior-Web-App/src
+<a href="https://mhdfaisal.github.io/Interior-Web-App/src" target="blank">https://mhdfaisal.github.io/Interior-Web-App/src</a>
